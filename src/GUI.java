@@ -10,17 +10,25 @@ public class GUI extends JFrame {
         frame.setSize(500,500);
 
         JPanel panel = new JPanel();
+        JToolBar toolBar = new JToolBar();
+        JButton button1 = new JButton("Weiter zur Adresseingabe");
 
         frame.add(panel);
 
         panel.setLayout(new FlowLayout());
-        JLabel label1 = new JLabel();
-        JButton button1 = new JButton("Senden");
-        button1.setPreferredSize(new Dimension(100,20));
-        label1.setText("Adresseingabe");
+        toolBar.setSize(new Dimension(50, this.getWidth()));
+        button1.setPreferredSize(new Dimension(50,20));
 
-        panel.add(label1);
+        addNavigationButton(toolBar);
+        panel.add(toolBar);
         panel.add(button1);
+    }
+
+    private void addNavigationButton(JToolBar toolBar){
+        JButton button = new JButton("Einstellungen");
+
+        toolBar.add(button);
+
     }
 
     public static void main (String [] args){
