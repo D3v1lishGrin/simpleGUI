@@ -1,0 +1,12 @@
+<xs:element name="address">
+<xs:complexType>
+    <xs:sequence>
+        <xs:element name="strasse">
+            <xs:complexType>
+                <xs:element name="personen">
+                </xs:element>
+            </xs:complexType>
+        </xs:element>
+    </xs:sequence>
+</xs:complexType>
+</xs:element>
